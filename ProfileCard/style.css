@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    position: relative;
+    padding: 25px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px 20px 20px rgba(0, 0, 0, 0.5)
+}
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 24px 24px 0 0;
+    height: 150px;
+    width: 100%;
+    background-color: #0766AD;
+}
+
+.profile-card .image-box {
+    padding: 5px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #0766AD;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-card .image-box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-card .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.profile-card .text .name {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.profile-card .text .title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profile-card .text .bio {
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 300;
+    margin: 10px;
+    padding: 10px;
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+}
+
+.profile-card .media-buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-content: center;
+}
+
+.profile-card .media-buttons .link {
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    display: flex;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
