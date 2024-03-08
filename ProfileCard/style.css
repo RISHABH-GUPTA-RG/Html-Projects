@@ -21,6 +21,7 @@ body {
 .profile-card {
     width: 100%;
     max-width: 400px;
+    min-width: 300px;
     background-color: #fff;
     position: relative;
     padding: 25px;
