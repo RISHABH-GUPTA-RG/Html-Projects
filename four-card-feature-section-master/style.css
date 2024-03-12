@@ -121,7 +121,7 @@ p {
     margin-top: 2rem;
 }
 
-@media screen and (max-width:800px) {
+@media (max-width:900px) {
     .layout{
         grid-template-columns:1fr;
     }
