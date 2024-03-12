@@ -31,7 +31,6 @@ html {
     font-weight: var(--fw-normal);
     font-family: var(--ff-poppins-sans);
     line-height: 1.7;
-    background-color: black;
 }
 
 body {
