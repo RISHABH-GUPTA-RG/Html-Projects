@@ -36,6 +36,7 @@
 html {
     font-size: 60%;
     overflow-x: hidden;
+    min-width: 375px;
 }
 
 
@@ -122,7 +123,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 10rem;
 }
 
 /* Text and btn part */
@@ -501,7 +502,7 @@ section {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
-    line-height: 1.6rem;
+    line-height: 5rem;
     margin-left: 0;
     text-align: center;
 }
@@ -538,6 +539,10 @@ section {
 @media (max-width:991px) {
     header {
         padding: 2rem 3%;
+    }
+
+    .home{
+        gap:5rem;
     }
 
     section {
@@ -621,7 +626,15 @@ section {
     }
 
     .home-img {
-        width: 30vw;
+        width: 50vw;
     }
 
+    .home-img img {
+        width: 50vw;
+    }
+
+    .timeline-content {
+        border-radius: 2rem;
+        padding: 10px 20px;
+    }
 }
