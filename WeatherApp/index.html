@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="inputContainer">
+                <input
+                    class="searchInput"
+                    id="searchInput"
+                    placeholder="Search..."
+                />
+                <button class="searchButton" id="searchButton">
+                    <i class="bx bx-search"></i>
+                </button>
+            </div>
+            <div class="weather-contianer">
+                <div class="cityWeather hidden" id="cityWeather">
+                    <img class="icon" id="icon" alt />
+                    <h1 class="tempratrure" id="tempratrure"></h1>
+                    <h2 class="city" id="city"></h2>
+                    <div class="details">
+                        <div class="detail">
+                            <img src="./images/humidity.png" />
+                            <div class="description">
+                                <p class="value" id="humidity">%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <img src="./images/wind.png" />
+                            <div class="description">
+                                <p class="value" id="wind">km/hr</p>
+                                <p>Wind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="noCityFound" class="noCityFound hidden">
+                <p>Oops! Location Not Found</p>
+                <img src="./images/no-address-found.png" />
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
