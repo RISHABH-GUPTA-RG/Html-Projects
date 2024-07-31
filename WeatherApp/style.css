@@ -96,6 +96,8 @@ body {
 
 .cityWeather .icon {
     width: 170px;
+    height: 150px;
+    margin-top: 10px;
 }
 
 .cityWeather .tempratrure {
